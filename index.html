@@ -6,11 +6,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" integrity="sha256-pdY4ejLKO67E0CM2tbPtq1DJ3VGDVVdqAR6j3ZwdiE4=" crossorigin="anonymous">
     <title>Bootfront</title>
+    <style>
+        footer a {
+            color: #ffc107;
+        }
+
+        @media screen and (min-width: 768px) {
+            aside {
+                max-width: 220px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="bg-success fixed-top">
-        <nav class="container navbar navbar-expand-sm navbar-dark bg-success">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container">
                 <a class="navbar-brand" href="javascript:void(0)">
                     <h1 class="h4 d-inline">
                         <i class="bi bi-bootstrap-fill text-warning"></i>ootFront
@@ -46,9 +57,21 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid col mt-5 pt-3">
-        <section class="col p-2 text-center">
-            <h3>Conte&uacute;do Principal</h3>
+    <main class="container d-flex flex-column flex-md-row mt-5 pt-3">
+        <section class="p-3 flex-grow-1 text-center">
+            <h3 class="h1">Conte&uacute;do Principal</h3>
+            <div class="d-flex flex-row align-items-center gap-3 mt-3 mb3">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/31596394/pexels-photo-31596394.jpeg" alt="">
+                    <div class="card-body">corpo</div>
+                    <div class="card-footer">rodap&eacute;</div>
+                </div>
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="https://images.pexels.com/photos/6151203/pexels-photo-6151203.jpeg" alt="">
+                    <div class="card-body">corpo</div>
+                    <div class="card-footer">rodap&eacute;</div>
+                </div>
+            </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam illo assumenda, modi voluptas beatae provident ut sequi animi error architecto iusto quam consequuntur quibusdam cupiditate, excepturi quisquam nemo officiis.
             </p>
@@ -56,13 +79,36 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dicta cumque rem quae animi, repellendus, amet quas qui dolores ea fugiat, repudiandae possimus itaque. Quia explicabo molestiae illo doloremque architecto!
             </p>
         </section>
-        <aside class="col p-2 text-center">
+        <aside class="d-flex flex-column flex-shrink-0 p-2 text-center rounded bg-opacity-25 bg-secondary">
             <h3>Counte&uacute;do Adicional</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente amet a at expedita sequi deserunt nisi vero debitis nobis eligendi consequatur voluptate odit, recusandae aperiam minus illo voluptates nemo! Laboriosam.</p>
         </aside>
     </main>
-    <footer class="container-fluid bg-success text-white text-center">
-
+    <footer class="container-fluid bg-success d-flex flex-row justify-content-around text-white">
+        <div class="d-flex flex-column text-center">
+            <h4 class="h5">Redes Sociais</h4>
+            <ul>
+                <li><a href="https://www.youtube.com" target="_blank">  <span><i class="pe-1 bi bi-youtube"></i>Youtube</span></a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank"> <span><i class="pe-1 bi bi-whatsapp"></i>Whatsapp</span></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><span><i class="pe-1 bi bi-instagram"></i>Instagram</span></a></li>
+            </ul>
+        </div>
+        <div class="d-none flex-column text-center d-sm-flex">
+            <h4 class="h5">Parceiros</h4>
+            <ul>
+                <li><a href="#"><i class="pe-1 bi bi-fork-knife"></i><span>Padaria</span></a></li>
+                <li><a href="#"><i class="pe-1 bi bi-basket-fill"></i><span>Mercadinho 123</span></a></li>
+                <li><a href="#"><i class="pe-1 bi bi-house-door-fill"></i><span>Casas Bahia</span></a></li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column text-center">
+            <h4 class="h5">Acesso R&aacute;pido</h4>
+            <ul>
+                <li><a href="#"><i class="pe-1 bi bi-envelope-fill"></i><span>Contato</span></a></li>
+                <li><a href="#"><i class="pe-1 bi bi-info-circle-fill"></i><span>Sobre</span></a></li>
+                <li><a href="#"><i class="pe-1 bi bi-shield-fill-check"></i><span>Privacidade</span></a></li>
+            </ul>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
