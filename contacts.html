@@ -42,8 +42,10 @@
                         </li>
                     </ul>
                     <form class="d-flex mt-2 mt-sm-0" action="https://www.google.com/search" method="get">
-                        <input class="form-control rounded-0 rounded-start" type="text" placeholder="Pesquisar" name="q">
-                        <button class="btn btn-warning rounded-0 rounded-end" type="submit"><i class="bi bi-search"></i></button>
+                        <div class="input-group">
+                            <input class="form-control" minlength="2" type="text" placeholder="Pesquisar" name="q" required>
+                            <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -51,25 +53,33 @@
     </header>
     <main class="container d-flex flex-column flex-grow-1 flex-md-row mt-5 pt-3">
         <section class="p-3 flex-grow-1 text-center">
-            <h3 class="h1">Conte&uacute;do Principal</h3>
-            <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center gap-3 mt-3 mb3">
-                <div class="cooler-card card">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/31596394/pexels-photo-31596394.jpeg" alt="">
-                    <div class="card-body">corpo</div>
-                    <div class="card-footer">rodap&eacute;</div>
-                </div>
-                <div class="cooler-card card">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/6151203/pexels-photo-6151203.jpeg" alt="">
-                    <div class="card-body">corpo</div>
-                    <div class="card-footer">rodap&eacute;</div>
-                </div>
+            <h3 class="h1">Fa&ccedil;a Contato</h3>
+            <div class="card card mx-auto p-2 bg" style="max-width: 512px;">
+                <main class="card-body">
+                    <form method="post" id="mail-form">
+                        <small class="text-danger">preencha todos os campos!</small>
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome" required>
+                          <label for="name">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                          <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="text" class="form-control" id="subject" placeholder="Assunto" name="subject" required>
+                          <label for="subject">Assunto</label>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" id="message" name="message" placeholder="Mensagem" required></textarea>
+                          <label for="message">Mensagem</label>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start">
+                            <button type="submit" class="btn btn-warning mt-4 px-5 AAAAA">Enviar</button>
+                        </div>
+                    </form>
+                </main>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam illo assumenda, modi voluptas beatae provident ut sequi animi error architecto iusto quam consequuntur quibusdam cupiditate, excepturi quisquam nemo officiis.
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dicta cumque rem quae animi, repellendus, amet quas qui dolores ea fugiat, repudiandae possimus itaque. Quia explicabo molestiae illo doloremque architecto!
-            </p>
         </section>
         <aside class="d-flex flex-column flex-shrink-0 p-2 text-center rounded bg-opacity-25 bg-secondary">
             <h3>Counte&uacute;do Adicional</h3>
@@ -106,7 +116,7 @@
         
         <footer class="container d-flex flex-row justify-content-between border-top">
             <a href="index.html"><i class="bi bi-house-fill fs-2"></i></a>
-            <div class="text-white h5 align-self-center">&copy; Pizza Pizzaria das Pizzas</div>
+            <div class="text-white h5 align-self-center">&copy; Pizzaria das Pizzas</div>
             <a href="#top"><i class="bi bi-arrow-up-circle-fill fs-2"></i></a>
         </footer>
     </footer>

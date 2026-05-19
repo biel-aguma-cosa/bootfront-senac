@@ -32,6 +32,25 @@
     .cooler-card {
             width: 16rem;
     }
+
+    #mail-form textarea {
+        height: 180px;
+    }
+    #mail-form:invalid button {
+        pointer-events: none;
+        cursor: no-drop;
+        opacity: 25%;
+    }
+    #mail-form:invalid .text-danger {
+        display: inline;
+    }
+    #mail-form:valid .text-danger {
+        display: none;
+    }
+
+    .AAAAA {
+        justify-self: left;
+    }
     
     @media screen and (min-width: 768px) {
         aside {
